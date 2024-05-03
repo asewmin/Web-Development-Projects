@@ -1,0 +1,253 @@
+/* Reset some default styles */
+body, ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Apply background to the entire page */
+body {
+    background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
+}
+
+/* Header styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    transition: max-height 0.3s ease-in-out; 
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s; 
+}
+
+.nav-links a:hover {
+    color: #4CAF50;
+}
+
+.logo a {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+}
+
+.burger-menu {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Hero section styles */
+.hero {
+    background-image: url('images/background.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #000000;
+    text-align: center;
+    padding: 150px 0;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    transform: translateY(0);
+    opacity: 1;
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    transform: translateY(0);
+    opacity: 1;
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+/* Add a hover effect for the hero section */
+.hero:hover {
+    transform: scale(1.02); /* Slightly increase size on hover */
+    transition: transform 0.5s ease-in-out;
+}
+
+/* About the Destination section styles */
+.about {
+    background-color: #fff;
+    padding: 40px;
+}
+
+.about h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Travel packages section styles */
+.packages {
+    background-color: #f2f2f2;
+    padding: 40px;
+}
+
+.packages h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.package {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s; /* Add transition for hover effect */
+}
+
+.package img {
+    max-width: 95%;
+    margin-bottom: 10px;
+}
+
+.package h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.package p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.package .price {
+    font-size: 20px;
+    font-weight: bold;
+    color: #4CAF50;
+}
+
+/* Add hover effects to package images */
+.package:hover {
+    transform: scale(1.05); /* Increase size on hover */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+}
+
+/* Style the cta-button for better visibility */
+.cta-button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none; /* Remove underlines from links */
+    display: inline-block;
+    margin-top: 10px;
+    transition: background-color 0.3s; /* Add background color transition */
+}
+
+.cta-button:hover {
+    background-color: #4CAF50;
+}
+
+/* Contact form styles */
+.contact {
+    background-color: #fff;
+    padding: 40px;
+}
+
+.contact h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.form-group input[type="text"], .form-group input[type="email"] {
+    height: 40px;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s; /* Add background color transition */
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-media {
+    font-size: 24px;
+}
+
+.social-media a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 10px;
+    transition: color 0.3s; /* Add color transition for social media icons */
+}
+
+/* Add hover effect to social media icons */
+.social-media a:hover {
+    color: #4CAF50;
+}
+
+/* Media query for responsive design */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .burger-menu {
+        display: block;
+    }
+}

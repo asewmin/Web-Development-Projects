@@ -1,0 +1,138 @@
+body {
+  font-family: Arial, sans-serif;
+  background-image: url('bg.jpg'); 
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  background-position: center;
+}
+
+header {
+  background-color: #3498db;
+  color: white;
+  padding: 16px;
+  text-align: center;
+  width: 800px;
+}
+
+.task-input {
+  background-color: white;
+  padding: 16px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 16px;
+}
+
+.task-input input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.task-input button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.task-input button:hover {
+  background-color: #2980b9;
+}
+
+.task-filters {
+  margin-top: 16px;
+  display: flex;
+  gap: 8px;
+}
+
+.task-filters button {
+  background-color: #ccc;
+  color: #333;
+  border: none;
+  border-radius: 3px;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.task-filters button.active {
+  background-color: #3498db;
+  color: white;
+}
+
+.task-list {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background-color: white;
+  border-radius: 5px;
+  padding: 8px;
+  margin: 8px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+.past-due {
+  background-color: #ff8f8f;
+}
+
+.task-list input[type="checkbox"] {
+  margin-right: 8px;
+}
+
+button {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  padding: 4px 8px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: #d32f2f;
+}
+
+
+@media screen and (max-width: 768px) {
+  .task-input {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+  .task-input input {
+      width: 100%;
+  }
+  .task-filters {
+      flex-direction: column;
+  }
+  header{
+    width: fit-content;
+  }
+
+}
+

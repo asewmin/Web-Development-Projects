@@ -1,0 +1,171 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('green.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+header {
+    background-image: url('sections.jpg');
+    color: #1f1570;
+    text-align: center;
+    padding: 25px;
+    border-bottom: 3px solid #140577;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); 
+}
+
+header p {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); 
+}
+
+.profile-image {
+    display: block;
+    margin: 20px auto;
+    border-radius: 50%;
+    box-shadow: 0px 0px 15px rgba(108, 92, 231, 0.7);
+    width: 270px;
+    height: 270px;
+    object-fit: cover;
+    border: 5px solid #fff;
+}
+
+section {
+    display: grid;
+    margin: 20px;
+    background-image: url('sections.jpg');
+    padding: 20px;
+    box-shadow: 0px 0px 20px rgba(108, 92, 231, 0.2);
+    border-radius: 10px;
+}
+
+section h3 {
+    text-decoration: underline;
+}
+
+section p {
+    font-weight: bold; 
+}
+
+.project-image {
+    width: 800px;
+    height: 450px;
+    transition: transform 0.3s;
+}
+
+.project-image:hover {
+    transform: scale(1.04);
+}
+
+
+
+h2 {
+    color: #1f1570;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #6c5ce7;
+    padding-bottom: 10px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+}
+
+.contact-form label, .contact-form textarea, .contact-form input {
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.contact-form button {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s; 
+}
+
+.contact-form button:hover {
+    background-color: #457aa9; 
+}
+
+
+nav {
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  nav ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  nav li {
+    margin: 0;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #555;
+    padding: 15px 20px;
+  }
+  
+  nav a:hover,
+  nav a:active {
+    background-color:  rgb(19, 169, 219);
+    border-radius: 5px;
+  }
+
+  
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #6c5ce7;
+    color: #fff;
+    font-size: 1.2rem;
+    border-top: 3px solid #4834d4;
+}
+
+
+@media (max-width: 768px) {
+    body {
+        font-size: 16px; 
+    }
+}
+
+@media (min-width: 769px) {
+    body {
+        font-size: 18px; 
+    }
+}
+
+
+
+
+
